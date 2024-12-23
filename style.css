@@ -1,0 +1,203 @@
+body{
+    background-color: rgb(39,43,48);
+}
+.img-page img{
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+}
+.navbar{
+    margin-top: -2%;
+    background-color: rgb(58,73,123) !important;
+    border-radius: 20px;
+    padding: 7px;
+    box-shadow: 0 0 7px 0 #000;
+    width: 75%;
+    position: sticky !important;
+    top: 0;
+    z-index: 9999;
+}
+.navbar-brand img{
+    width: 15%;
+}
+.navbar-brand h5{
+    font-family: cursive;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color:white ;
+}
+.nav-item a{
+    color: white !important;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: cursive;
+    text-transform: uppercase;
+}
+.nav-item a:hover{
+    color: rgb(0, 153, 204) !important;
+}
+@media screen and (max-width:992px){
+    .navbar{
+        width: 100%;
+    }
+    .img-page img{
+        height: 20vh;
+    }
+    .navbar{
+        margin-top: -5%;
+    }
+}
+.img-card{
+    width: 90%;
+    margin: auto;
+    padding-top: 15px;
+    filter: grayscale(70%);
+}
+.card{
+    background-color: rgb(39,43,48);
+    border: 1px solid rgb(34,38,43);
+    height: 95%;
+    transition: 1s;
+}
+.part-one{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: cursive;
+    color: white;
+}
+.part-two p{
+    font-family: cursive;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 12px;
+    color: white;
+    background-color: rgb(74,103,146);
+}
+.card-text{
+    font-weight: 400;
+    font-size: 14px;
+    font-family: cursive;
+    line-height: 21px;
+    color: rgb(144,146,149);
+}
+.one p{
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 11px;
+    font-family: cursive;
+    background-color: rgb(54,55,57);
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+.card:hover{
+    transform: scale(1.1,1.1);
+}
+.card:hover img{
+    filter: grayscale(0%);
+    transition: 1s;
+}
+.card:hover .part-two p {
+    background-color: #0D6EFD;
+    transition: 1s;
+}
+@media screen and (max-width:992px) {
+    .card{
+        width: 95%;
+        margin: auto;
+    }
+}
+
+.loader {
+    transform: rotateZ(45deg);
+    perspective: 1000px;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    color: #fff;
+  }
+    .loader:before,
+    .loader:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: inherit;
+      height: inherit;
+      border-radius: 50%;
+      transform: rotateX(70deg);
+      animation: 1s spin linear infinite;
+    }
+    .loader:after {
+      color: #FF3D00;
+      transform: rotateY(70deg);
+      animation-delay: .4s;
+    }
+
+  @keyframes rotate {
+    0% {
+      transform: translate(-50%, -50%) rotateZ(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotateZ(360deg);
+    }
+  }
+
+  @keyframes rotateccw {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(-360deg);
+    }
+  }
+
+  @keyframes spin {
+    0%,
+    100% {
+      box-shadow: .2em 0px 0 0px currentcolor;
+    }
+    12% {
+      box-shadow: .2em .2em 0 0 currentcolor;
+    }
+    25% {
+      box-shadow: 0 .2em 0 0px currentcolor;
+    }
+    37% {
+      box-shadow: -.2em .2em 0 0 currentcolor;
+    }
+    50% {
+      box-shadow: -.2em 0 0 0 currentcolor;
+    }
+    62% {
+      box-shadow: -.2em -.2em 0 0 currentcolor;
+    }
+    75% {
+      box-shadow: 0px -.2em 0 0 currentcolor;
+    }
+    87% {
+      box-shadow: .2em -.2em 0 0 currentcolor;
+    }
+  }
+.loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav-item a.active {
+  color: rgb(0, 153, 204) !important;
+}
